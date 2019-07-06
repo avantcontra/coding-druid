@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:  #440015;
+}
+
+svg {
+  stroke: #C1003D;
+  fill: transparent;
+  stroke-width: 8px;
+}
+.grey {
+  stroke: #60001E;
+  fill: transparent;
+  stroke-width: 3px;
+}
+text {
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 20px;
+  fill: #FF0050;
+  stroke: #FF0050;
+  stroke-width: 1px;
+}
