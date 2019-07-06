@@ -11,7 +11,7 @@ Trigonometric function (Sine) visualization
 - [Javascript](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-js-react)
 
     <img src="http://floatcc.intplusplus.org/sine-visualization-reactjs.gif" alt="sine-visualization-reactjs" width="200">
-    Using svg, React Hooks
+     Forked one, refactoring using React Hooks
 
 - Python
 - Unity3D
