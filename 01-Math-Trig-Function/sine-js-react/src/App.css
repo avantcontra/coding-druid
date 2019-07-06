@@ -1,5 +1,17 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+
+.App-info {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 1000;
+  color:#FF0050;
+}
+
+.App-info a{
+  color:#FF0050;
 }
 
 #container {

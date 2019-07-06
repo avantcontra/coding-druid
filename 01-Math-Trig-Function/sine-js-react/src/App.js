@@ -6,7 +6,12 @@ import Sine from './Sine';
 function App() {
   return (
     <div className="App">
-      <Sine/>
+      <div className="App-info">
+        <p>Forked from <a href="https://codepen.io/HunorMarton/pen/ggQGqQ" target="_blank">codepen.io/HunorMarton/pen/ggQGqQ</a></p>
+        <p>Replaced class components using function and Hooks</p>
+        <p>by Contra <a href="https://www.floatbug.com" target="_blank">floatbug.com</a></p>
+      </div>
+      <Sine />
     </div>
   );
 }
