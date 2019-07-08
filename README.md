@@ -13,7 +13,10 @@ Trigonometric function (Sine) visualization
     <img src="http://floatcc.intplusplus.org/sine-visualization-reactjs.gif" alt="sine-visualization-reactjs" width="200">
      Forked one, refactoring using React Hooks
 
-- Python
+- [Python](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-python)
+
+    <img src="http://floatcc.intplusplus.org/sine-py-effect-0.gif" alt="sine-visualization-reactjs" width="200">
+
 - Unity3D
 
 ----
