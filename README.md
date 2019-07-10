@@ -17,8 +17,9 @@ Trigonometric function (Sine) visualization
 
     <img src="http://floatcc.intplusplus.org/sine-py-effect-0.gif" alt="sine-visualization-reactjs" width="200">
 
-- Unity3D
+- [Unity3D](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-unity)
 
+    <img src="http://floatcc.intplusplus.org/sine-unity-optimize.gif" alt="sine-visualization-reactjs" width="200">
 ----
 
 
