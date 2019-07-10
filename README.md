@@ -2,7 +2,9 @@
 "Coding Druid" series is my **horizontal programming** practice notes, each part around a topic (mathematical physics electronic graphics sound...), implemented in several programming languages.
 
 ## 01-Math-Trig-Function
-Trigonometric function (Sine) visualization
+Trigonometric function (Sine) visualization. 
+
+**Click the text link** to see each language implemented.
 
 - [MaxMSP](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/maxmsp)
 
