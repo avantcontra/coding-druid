@@ -21,14 +21,28 @@ export default function Fourier() {
         return () => clearInterval(id);
     }, []);
 
+    const onSlider = ()=>{
+       var slider = document.getElementById("myRange");
+       console.log(slider.value);
+       if(slider.value % 2 > 0) {
+        setN(slider.value);
+       }
+       
+    }
+
     return (<div id='container'>
-        <SinusDraw className="draw1" degree={degree} n={1}/>
+        {/* <SinusDraw className="draw1" degree={degree} n={1}/>
         <SinusDraw className="draw2" degree={degree} n={3}/>
         <SinusDraw className="draw3" degree={degree} n={5}/>
-        <SinusDraw className="draw4" degree={degree} n={7}/>
-        <SinusDraw className="draw2" degree={degree} n={n}/>
+        <SinusDraw className="draw4" degree={degree} n={7}/> */}
+        <SinusDraw className="draw1" degree={degree} n={n}/>
+        <div className="slidecontainer">
+            <input type="range" min="1" max="49" defaultValue="1" className="slider" id="myRange"
+            onInput={onSlider}/>
+        </div>
     </div>);
 }
+
 
 const SinusDraw = ({className, degree, n }) => (
     <div className={'fourierDiv' + ' ' + className}>
