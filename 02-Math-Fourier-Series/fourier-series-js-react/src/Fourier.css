@@ -1,0 +1,37 @@
+svg {
+    stroke: #33003D;
+    fill: transparent;
+    stroke-width: 3px;
+}
+
+.grey {
+    stroke: #333300;
+}
+
+text {
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 20px;
+    fill: #330050;
+    stroke: #330050;
+    stroke-width: 1px;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    background:  #eeeeee;
+  }
+
+  
+.fourierDiv {
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.draw1 {
+    padding-top: 200px;
+}

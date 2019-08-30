@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Sine from './Fourier';
+import Fourier from './Fourier';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         
         <p>by Contra <a href="https://www.floatbug.com" target="_blank">floatbug.com</a></p>
       </div>
-      <Sine />
+      <Fourier />
     </div>
   );
 }
