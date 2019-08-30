@@ -47,7 +47,7 @@ export default function Fourier() {
 const SinusDraw = ({className, degree, n }) => (
     <div className={'fourierDiv' + ' ' + className}>
         <svg width='940' height='350' xmlns='http://www.w3.org/2000/svg' >
-            <g transform='translate(20 20)'>
+            <g transform='translate(20 40)'>
                 <text>
                     n = {n}
                 </text>
@@ -74,7 +74,7 @@ const SinusDraw = ({className, degree, n }) => (
                     <polyline
                         points={Array.from({ length: 360 }, (value, key) => {
                             // return key + " " + (Math.sin(n *key / 180 * Math.PI - degree/180 * Math.PI) * 100 *4/(n*Math.PI)+ 100)
-                            return key + " " + sum(n, key, degree);
+                            return key + " " + (sum(n, key, degree) + 100);
                         })} />
          
                 </g>
@@ -86,7 +86,7 @@ const SinusDraw = ({className, degree, n }) => (
 const sum = (n, key, degree) => {
     let sum = 0;
     for (let i = n; i > 0; i-=2) {
-        sum += (Math.sin(i *dToR(key) - i *dToR(degree)) * 100 + 100)*4/(i*Math.PI)
+        sum += ( (Math.sin(i *dToR(key) - i *dToR(degree))) * 4/(i*Math.PI) * 100 )
     }
     return sum;
     // (Math.sin(n *key / 180 * Math.PI - degree/180 * Math.PI) * 100 *4/(n*Math.PI)+ 100)
