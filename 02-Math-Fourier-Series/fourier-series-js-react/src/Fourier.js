@@ -53,15 +53,13 @@ const SinusDraw = ({className, degree, n }) => (
                 </text>
 
                 {/* connected line */}
-                <line className='grey' x1={Math.cos(dToR(degree)) * 100 + 100 + 110} y1={-Math.sin(dToR(degree)) * 100 + 100}
-                    x2={460} y2={-Math.sin(dToR(degree)) * 100 + 100} />
+                <line className='grey' x1={Math.cos(dToR(degree)) *  4/(1*Math.PI) * 100 + 100 + 110} y1={-Math.sin(dToR(degree)) *  4/(1*Math.PI) * 100 + 100}
+                    x2={460} y2={-Math.sin(dToR(degree)) *  4/(1*Math.PI) * 100 + 100} />
 
                 {/* circle */}
                 <g transform='translate(110 0)'>
-                    <line className='grey' x1="100" y1="100" x2="200" y2="100" />
-                    <circle className='grey' cx="100" cy="100" r="100" />
-                    <path d={'M 130 100 A 30 30 0 ' + (degree <= 180 ? '0' : '1') + ' 0' + (Math.cos(dToR(degree)) * 30 + 100) + ' ' + (-Math.sin(dToR(degree)) * 30 + 100)} />
-                    <line className='grey' x1="100" y1="100" x2={Math.cos(dToR(degree)) * 100 + 100} y2={-Math.sin(dToR(degree)) * 100 + 100} />
+                    <circle className='grey' cx="100" cy="100" r={ 4/(1*Math.PI) * 100} />
+                    <line className='grey' x1="100" y1="100" x2={Math.cos(dToR(degree)) *  4/(1*Math.PI) * 100 + 100} y2={-Math.sin(dToR(degree)) *  4/(1*Math.PI) * 100 + 100} />
                     <text x={Math.cos(dToR(degree)) * 100 + 100 + 10} y={-Math.sin(dToR(degree)) * 100 + 100}>
                         {degree}°
               </text>
