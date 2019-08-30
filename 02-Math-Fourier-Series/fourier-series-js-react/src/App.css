@@ -28,12 +28,10 @@
 svg {
   stroke: #33003D;
   fill: transparent;
-  stroke-width: 8px;
+  stroke-width: 3px;
 }
 .grey {
   stroke: #333300;
-  fill: transparent;
-  stroke-width: 3px;
 }
 text {
   font-family: 'Droid Sans Mono', monospace;

@@ -27,13 +27,9 @@ const SinusDraw = ({ degree }) => (
         <svg width='940' height='240' xmlns='http://www.w3.org/2000/svg' >
             <g transform='translate(20 20)'>
 
-                <text x="0" y="100">
-                    sin(
-            </text>
-
                 {/* connected line */}
                 <line className='grey' x1={Math.cos(degree / 180 * Math.PI) * 100 + 100 + 110} y1={-Math.sin(degree / 180 * Math.PI) * 100 + 100}
-                    x2={degree + 460} y2={-Math.sin(degree / 180 * Math.PI) * 100 + 100} />
+                    x2={460} y2={-Math.sin(degree / 180 * Math.PI) * 100 + 100} />
 
                 {/* circle */}
                 <g transform='translate(110 0)'>
@@ -48,25 +44,15 @@ const SinusDraw = ({ degree }) => (
               </text>
                 </g>
 
-                <text x="370" y="100">
-                    ) =
-            </text>
-
                 {/* sine */}
                 <g transform='translate(460 0)'>
                     <line className='grey' x1="0" y1="100" x2="360" y2="100" />
 
-                    <polyline className='grey'
-                        points={Array.from({ length: 360 }, (value, key) => {
-                            return key + " " + (-Math.sin(key / 180 * Math.PI) * 100 + 100)
-                        })} />
                     <polyline
-                        points={Array.from({ length: degree }, (value, key) => {
-                            return key + " " + (-Math.sin(key / 180 * Math.PI) * 100 + 100)
+                        points={Array.from({ length: 360 }, (value, key) => {
+                            return key + " " + (Math.sin(key / 180 * Math.PI - degree/180 * Math.PI) * 100 + 100)
                         })} />
-                    <text x={degree + 10} y={-Math.sin(degree / 180 * Math.PI) * 100 + 100}>
-                        {parseFloat(Math.sin(degree / 180 * Math.PI)).toFixed(4)}
-                    </text>
+         
                 </g>
             </g>
         </svg>
