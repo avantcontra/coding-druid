@@ -23,7 +23,7 @@ export default function Fourier() {
 
     const onSlider = ()=>{
        var slider = document.getElementById("myRange");
-       console.log(slider.value);
+    //    console.log('onSlider', slider.value);
        if(slider.value % 2 > 0) {
         setN(slider.value);
        }
@@ -31,13 +31,9 @@ export default function Fourier() {
     }
 
     return (<div id='container'>
-        {/* <FourierDraw className="draw1" degree={degree} n={1}/>
-        <FourierDraw className="draw2" degree={degree} n={3}/>
-        <FourierDraw className="draw3" degree={degree} n={5}/>
-        <FourierDraw className="draw4" degree={degree} n={7}/> */}
         <FourierDraw className="draw1" degree={degree} n={n}/>
         <div className="slidecontainer">
-            <input type="range" min="1" max="19" defaultValue="1" className="slider" id="myRange"
+            <input type="range" min="1" max="23" defaultValue="1" step="2" className="slider" id="myRange"
             onInput={onSlider}/>
         </div>
     </div>);
@@ -47,11 +43,7 @@ export default function Fourier() {
 const FourierDraw = ({className, degree, n }) => (
     <div className={'fourierDiv' + ' ' + className}>
         <svg width='940' height='350' xmlns='http://www.w3.org/2000/svg' >
-            <g transform='translate(20 40)'>
-                <text>
-                    n = {n}
-                </text>
-
+            <g transform='translate(20 80)'>
                
 
                 {/* circle */}
@@ -59,7 +51,7 @@ const FourierDraw = ({className, degree, n }) => (
 
                 {/* sine */}
                 <g transform='translate(460 0)'>
-                    <line className='grey' x1="0" y1="100" x2="360" y2="100" />
+                    <line className='gray' x1="0" y1="100" x2="360" y2="100" />
 
                     <polyline
                         points={Array.from({ length: 360 }, (value, key) => {
@@ -74,6 +66,11 @@ const FourierDraw = ({className, degree, n }) => (
                     y1={ sumCircleCenterY(n, degree)}
                     x2={460} 
                     y2={sumSine(n, 360, degree)} />
+
+
+                <text x='396' y='250'>
+                    n = {n}
+                </text>
             </g>
         </svg>
     </div>
@@ -83,7 +80,7 @@ const circleItems = (n, degree) => {
     const items = [];
     n = Number(n);
     const len = (n+1)/2; //1, 3, 5, 7
-    console.log('n',n,'len',len)
+    // console.log('n',n,'len',len)
     Array.from({length: len}, (value, key) => {
         // console.log(value, key); //0, 1, 2, 3
         return 2*(key + 1)-1; //1, 3, 5, 7
@@ -91,13 +88,13 @@ const circleItems = (n, degree) => {
         //  console.log(i) //1, 3, 5, 7
         items.push(
         <g key={'fou_circle_' + i} transform='translate(110 0)'>
-            <circle className='grey' 
+            <circle className='gray' 
                 cx = {i === 1 ? 100 :
                     sumCircleCenterX(i-2, degree)}
                 cy = {i === 1 ? 100 :
                     sumCircleCenterY(i-2, degree)}
                 r={ 4/(i*Math.PI) * 100} />
-            <line className='radiusLine' 
+            <line 
                 x1 = {i === 1 ? 100 :
                     sumCircleCenterX(i-2, degree)}
                 y1 = {i === 1 ? 100 :

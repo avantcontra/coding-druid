@@ -1,14 +1,12 @@
 .App {
   text-align: left;
+  background:  #eeeeee;
 }
 
 .App-info {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  z-index: 1000;
   color:#330051;
   font-size: 14px;
+  padding: 40px;
 }
 
 .App-info a{
