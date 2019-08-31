@@ -8,7 +8,6 @@ export default function Fourier() {
 
     useEffect(() => {
         const id = setInterval(() => {
-            //If the new state is computed using the previous state, you can pass a function to setState. 
             //https://reactjs.org/docs/hooks-reference.html#functional-updates
             setDegree(c => {
                 if (c < 360) {
@@ -39,12 +38,10 @@ export default function Fourier() {
     </div>);
 }
 
-
 const FourierDraw = ({className, degree, n }) => (
     <div className={'fourierDiv' + ' ' + className}>
         <svg width='940' height='350' xmlns='http://www.w3.org/2000/svg' >
             <g transform='translate(20 80)'>
-               
 
                 {/* circle */}
                 {circleItems(n, degree)}
@@ -52,21 +49,18 @@ const FourierDraw = ({className, degree, n }) => (
                 {/* sine */}
                 <g transform='translate(460 0)'>
                     <line className='gray' x1="0" y1="100" x2="360" y2="100" />
-
                     <polyline
                         points={Array.from({ length: 360 }, (value, key) => {
-                            // return key + " " + (Math.sin(n *key / 180 * Math.PI - degree/180 * Math.PI) * 100 *4/(n*Math.PI)+ 100)
                             return key + " " + sumSine(n, key, degree);
                         })} />
                 </g>
 
                  {/* connected line */}
                  <line className='connectedLine' 
-                    x1={ sumCircleCenterX(n, degree) + 110} 
-                    y1={ sumCircleCenterY(n, degree)}
+                    x1={sumCircleCenterX(n, degree) + 110} 
+                    y1={sumCircleCenterY(n, degree)}
                     x2={460} 
                     y2={sumSine(n, 360, degree)} />
-
 
                 <text x='396' y='250'>
                     n = {n}
@@ -117,14 +111,12 @@ const sumSine = (n, key, degree) => {
 
     sum += 100;
     return sum;
-    // (Math.sin(n *key / 180 * Math.PI - degree/180 * Math.PI) * 100 *4/(n*Math.PI)+ 100)
 }
 
 //degreeToRad
 const dToR = (degree) => {
     return degree/180 * Math.PI;
 }
-
 
 const sumCircleCenterX = (n, degree) => {
     n = Number(n);
