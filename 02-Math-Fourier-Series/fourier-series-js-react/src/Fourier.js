@@ -31,20 +31,20 @@ export default function Fourier() {
     }
 
     return (<div id='container'>
-        {/* <SinusDraw className="draw1" degree={degree} n={1}/>
-        <SinusDraw className="draw2" degree={degree} n={3}/>
-        <SinusDraw className="draw3" degree={degree} n={5}/>
-        <SinusDraw className="draw4" degree={degree} n={7}/> */}
-        <SinusDraw className="draw1" degree={degree} n={n}/>
+        {/* <FourierDraw className="draw1" degree={degree} n={1}/>
+        <FourierDraw className="draw2" degree={degree} n={3}/>
+        <FourierDraw className="draw3" degree={degree} n={5}/>
+        <FourierDraw className="draw4" degree={degree} n={7}/> */}
+        <FourierDraw className="draw1" degree={degree} n={n}/>
         <div className="slidecontainer">
-            <input type="range" min="1" max="49" defaultValue="1" className="slider" id="myRange"
+            <input type="range" min="1" max="19" defaultValue="1" className="slider" id="myRange"
             onInput={onSlider}/>
         </div>
     </div>);
 }
 
 
-const SinusDraw = ({className, degree, n }) => (
+const FourierDraw = ({className, degree, n }) => (
     <div className={'fourierDiv' + ' ' + className}>
         <svg width='940' height='350' xmlns='http://www.w3.org/2000/svg' >
             <g transform='translate(20 40)'>
@@ -52,18 +52,10 @@ const SinusDraw = ({className, degree, n }) => (
                     n = {n}
                 </text>
 
-                {/* connected line */}
-                <line className='grey' x1={Math.cos(dToR(degree)) *  4/(1*Math.PI) * 100 + 100 + 110} y1={-Math.sin(dToR(degree)) *  4/(1*Math.PI) * 100 + 100}
-                    x2={460} y2={-Math.sin(dToR(degree)) *  4/(1*Math.PI) * 100 + 100} />
+               
 
                 {/* circle */}
-                <g transform='translate(110 0)'>
-                    <circle className='grey' cx="100" cy="100" r={ 4/(1*Math.PI) * 100} />
-                    <line className='grey' x1="100" y1="100" x2={Math.cos(dToR(degree)) *  4/(1*Math.PI) * 100 + 100} y2={-Math.sin(dToR(degree)) *  4/(1*Math.PI) * 100 + 100} />
-                    <text x={Math.cos(dToR(degree)) * 100 + 100 + 10} y={-Math.sin(dToR(degree)) * 100 + 100}>
-                        {degree}°
-              </text>
-                </g>
+                {circleItems(n, degree)}
 
                 {/* sine */}
                 <g transform='translate(460 0)'>
@@ -72,20 +64,61 @@ const SinusDraw = ({className, degree, n }) => (
                     <polyline
                         points={Array.from({ length: 360 }, (value, key) => {
                             // return key + " " + (Math.sin(n *key / 180 * Math.PI - degree/180 * Math.PI) * 100 *4/(n*Math.PI)+ 100)
-                            return key + " " + (sum(n, key, degree) + 100);
+                            return key + " " + sumSine(n, key, degree);
                         })} />
-         
                 </g>
+
+                 {/* connected line */}
+                 <line className='connectedLine' 
+                    x1={ sumCircleCenterX(n, degree) + 110} 
+                    y1={ sumCircleCenterY(n, degree)}
+                    x2={460} 
+                    y2={sumSine(n, 360, degree)} />
             </g>
         </svg>
     </div>
 )
 
-const sum = (n, key, degree) => {
+const circleItems = (n, degree) => {
+    const items = [];
+    n = Number(n);
+    const len = (n+1)/2; //1, 3, 5, 7
+    console.log('n',n,'len',len)
+    Array.from({length: len}, (value, key) => {
+        // console.log(value, key); //0, 1, 2, 3
+        return 2*(key + 1)-1; //1, 3, 5, 7
+    }).forEach(i => {
+        //  console.log(i) //1, 3, 5, 7
+        items.push(
+        <g key={'fou_circle_' + i} transform='translate(110 0)'>
+            <circle className='grey' 
+                cx = {i === 1 ? 100 :
+                    sumCircleCenterX(i-2, degree)}
+                cy = {i === 1 ? 100 :
+                    sumCircleCenterY(i-2, degree)}
+                r={ 4/(i*Math.PI) * 100} />
+            <line className='radiusLine' 
+                x1 = {i === 1 ? 100 :
+                    sumCircleCenterX(i-2, degree)}
+                y1 = {i === 1 ? 100 :
+                    sumCircleCenterY(i-2, degree)}
+                x2={sumCircleCenterX(i, degree)} 
+                y2={sumCircleCenterY(i, degree)} />
+        </g>);        
+    });
+    // console.log(items)
+    return items;
+}
+
+
+const sumSine = (n, key, degree) => {
+    n = Number(n);
     let sum = 0;
     for (let i = n; i > 0; i-=2) {
-        sum += ( (Math.sin(i *dToR(key) - i *dToR(degree))) * 4/(i*Math.PI) * 100 )
+        sum += ( Math.sin(i *dToR(key) - i *dToR(degree)) * 4/(i*Math.PI) * 100 )
     }
+
+    sum += 100;
     return sum;
     // (Math.sin(n *key / 180 * Math.PI - degree/180 * Math.PI) * 100 *4/(n*Math.PI)+ 100)
 }
@@ -93,4 +126,27 @@ const sum = (n, key, degree) => {
 //degreeToRad
 const dToR = (degree) => {
     return degree/180 * Math.PI;
+}
+
+
+const sumCircleCenterX = (n, degree) => {
+    n = Number(n);
+    let sum = 0;
+    let i=n;
+    for (let i = n; i > 0; i-=2) {
+        sum += ( Math.cos(i*dToR(degree)) *  4/(i*Math.PI) * 100 )
+    }
+    sum += 100;
+    return sum;
+}
+
+const sumCircleCenterY = (n, degree) => {
+    n = Number(n);
+    let i=n;
+    let sum = 0;
+    for (let i = n; i > 0; i-=2) {
+        sum += ( -Math.sin(i*dToR(degree)) *  4/(i*Math.PI) * 100)
+    }
+    sum += 100;
+    return sum;
 }

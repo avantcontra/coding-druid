@@ -4,6 +4,13 @@ svg {
     stroke-width: 3px;
 }
 
+.connectedLine {
+    stroke: blueviolet;
+}
+
+.radiusLine {
+    stroke: darkgrey;
+}
 .grey {
     stroke: #333300;
 }
