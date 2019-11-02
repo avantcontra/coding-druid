@@ -1,3 +1,17 @@
+Detail article:
+
+EN: Fourier Series Visualization Using React Hooks
+
+- [medium](https://medium.com/@contra/fourier-series-visualization-using-react-hooks-443f2719a01a)
+- [floatbug.com](https://www.floatbug.com/2019/08/31/fourier-series-visualization-using-react-hooks/)
+- [patreon](https://www.patreon.com/posts/29591837)
+
+中文：【编程德鲁伊 - 数学篇】JavaScript (React)傅里叶级数可视化
+
+- [实验编程 - 知乎专栏](https://zhuanlan.zhihu.com/p/80599102)
+
+----
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

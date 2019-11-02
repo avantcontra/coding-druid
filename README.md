@@ -10,7 +10,7 @@ Trigonometric function (Sine) visualization.
 
     <img src="http://floatcc.intplusplus.org/trig-max-visualization.gif" alt="trig-max-visualization" width="200">
 
-- [Javascript](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-js-react)
+- [JavaScript/React](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-js-react)
 
     <img src="http://floatcc.intplusplus.org/sine-visualization-reactjs.gif" alt="sine-visualization-reactjs" width="200">
      Forked one, refactoring using React Hooks
@@ -22,6 +22,14 @@ Trigonometric function (Sine) visualization.
 - [Unity3D](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-unity)
 
     <img src="http://floatcc.intplusplus.org/sine-unity-optimize.gif" alt="sine-visualization-reactjs" width="200">
+    
+## 02-Math-Fourier-Series
+Fourier Series visualization.
+- [JavaScript/React](https://github.com/avantcontra/coding-druid/tree/master/02-Math-Fourier-Series/fourier-series-js-react)
+
+    <img src="http://floatcc.intplusplus.org/fs-js-5.gif" alt="sine-visualization-reactjs" width="200">
+    Fourier Series Visualization Using SVG and React Hooks.
+  
 ----
 
 
