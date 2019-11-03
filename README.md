@@ -1,5 +1,13 @@
-# coding-druid
-"Coding Druid" series is my **horizontal programming** practice notes, each part around a topic (mathematical physics electronic graphics sound...), implemented in several programming languages.
+# Intro
+**"Coding Druid"** series is my **horizontal programming** practice notes, each part around a topic (mathematical physics electronic graphics sound...), implemented in several programming languages.
+
+Articles:
+
+https://www.floatbug.com/notes/
+
+https://medium.com/@contra
+
+# Source code
 
 ## 01-Math-Trig-Function
 Trigonometric function (Sine) visualization. 
