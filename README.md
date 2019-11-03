@@ -29,6 +29,12 @@ Fourier Series visualization.
 
     <img src="http://floatcc.intplusplus.org/fs-js-5.gif" alt="sine-visualization-reactjs" width="200">
     Fourier Series Visualization Using SVG and React Hooks.
+    
+- [Unity](https://github.com/avantcontra/coding-druid/tree/master/02-Math-Fourier-Series/fourier-series-unity)
+
+    <img src="http://floatcc.intplusplus.org/fs-unity-4-short-2m.gif" alt="Fourier-Series-visualization-unity" width="200">
+    Fourier Series Visualization Using Unity.
+ 
   
 ----
 
