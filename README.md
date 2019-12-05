@@ -1,11 +1,14 @@
 # Intro
 **"Coding Druid"** series is my **horizontal programming** practice notes, each part around a topic (mathematical physics electronic graphics sound...), implemented in several programming languages.
 
-Articles:
+# Articles:
 
-https://www.floatbug.com/notes/
+- English:
+    - https://www.floatbug.com/notes/
+    - https://medium.com/@contra
 
-https://medium.com/@contra
+- 中文版/Chinese:
+    - 微信公众号/知乎专栏：[实验编程](https://zhuanlan.zhihu.com/floatlab)
 
 # Source code
 
@@ -42,7 +45,11 @@ Fourier Series visualization.
 
     <img src="http://floatcc.intplusplus.org/fs-unity-4-short-2m.gif" alt="Fourier-Series-visualization-unity" width="200">
     Fourier Series Visualization Using Unity.
+    
+- [Blender + Python](https://github.com/avantcontra/coding-druid/tree/master/02-Math-Fourier-Series/fourier-series-python-blender)
  
+    <img src="http://floatcc.intplusplus.org/fs-blender-short.gif" alt="Fourier-Series-visualization-blender-python" width="200">
+    Fourier Series Visualization Using Blender + Python.
   
 ----
 
