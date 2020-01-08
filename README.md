@@ -4,7 +4,7 @@
 # Articles:
 
 - English:
-    - https://www.floatbug.com/notes/
+    - https://www.floatbug.com/experimental-programming/coding-druid/
     - https://medium.com/@contra
 
 - 中文版/Chinese:
