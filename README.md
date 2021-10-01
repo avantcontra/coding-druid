@@ -38,7 +38,7 @@ Trigonometric function (Sine) visualization.
 Fourier Series visualization.
 - [JavaScript/React](https://github.com/avantcontra/coding-druid/tree/master/02-Math-Fourier-Series/fourier-series-js-react)
 
-    <img src="http://floatcc.intplusplus.org/fs-js-5.gif" alt="sine-visualization-reactjs" width="200">
+    <img src="http://float.intplusplus.cn/fs-js-5.gif" alt="sine-visualization-reactjs" width="200">
     Fourier Series Visualization Using SVG and React Hooks.
     
 - [Unity](https://github.com/avantcontra/coding-druid/tree/master/02-Math-Fourier-Series/fourier-series-unity)
