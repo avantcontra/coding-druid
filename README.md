@@ -19,20 +19,20 @@ Trigonometric function (Sine) visualization.
 
 - [MaxMSP](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/maxmsp)
 
-    <img src="http://floatcc.intplusplus.org/trig-max-visualization.gif" alt="trig-max-visualization" width="200">
+    <img src="http://float.intplusplus.cn/trig-max-visualization.gif" alt="trig-max-visualization" width="200">
 
 - [JavaScript/React](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-js-react)
 
-    <img src="http://floatcc.intplusplus.org/sine-visualization-reactjs.gif" alt="sine-visualization-reactjs" width="200">
+    <img src="http://float.intplusplus.cn/sine-visualization-reactjs.gif" alt="sine-visualization-reactjs" width="200">
      Forked one, refactoring using React Hooks
 
 - [Python](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-python)
 
-    <img src="http://floatcc.intplusplus.org/sine-py-effect-0.gif" alt="sine-visualization-reactjs" width="200">
+    <img src="http://float.intplusplus.cn/sine-py-effect-0.gif" alt="sine-visualization-reactjs" width="200">
 
 - [Unity3D](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-unity)
 
-    <img src="http://floatcc.intplusplus.org/sine-unity-optimize.gif" alt="sine-visualization-reactjs" width="200">
+    <img src="http://float.intplusplus.cn/sine-unity-optimize.gif" alt="sine-visualization-reactjs" width="200">
     
 ## 02-Math-Fourier-Series
 Fourier Series visualization.
@@ -43,12 +43,12 @@ Fourier Series visualization.
     
 - [Unity](https://github.com/avantcontra/coding-druid/tree/master/02-Math-Fourier-Series/fourier-series-unity)
 
-    <img src="http://floatcc.intplusplus.org/fs-unity-4-short-2m.gif" alt="Fourier-Series-visualization-unity" width="200">
+    <img src="http://float.intplusplus.cn/fs-unity-4-short-2m.gif" alt="Fourier-Series-visualization-unity" width="200">
     Fourier Series Visualization Using Unity.
     
 - [Blender + Python](https://github.com/avantcontra/coding-druid/tree/master/02-Math-Fourier-Series/fourier-series-python-blender)
  
-    <img src="http://floatcc.intplusplus.org/fs-blender-short.gif" alt="Fourier-Series-visualization-blender-python" width="200">
+    <img src="http://float.intplusplus.cn/fs-blender-short.gif" alt="Fourier-Series-visualization-blender-python" width="200">
     Fourier Series Visualization Using Blender + Python.
   
 ----
