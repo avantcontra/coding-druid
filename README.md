@@ -4,7 +4,7 @@
 # Articles:
 
 - English:
-    - https://www.floatbug.com/experimental-programming/coding-druid/
+    - https://www.avantcontra.com/category/codingdruid/
     - https://medium.com/@contra
 
 - 中文版/Chinese:
@@ -59,9 +59,9 @@ Cheers~
 Contra
 
 - patreon (**buy me a coffee** XD): [avantcontra](https://www.patreon.com/avantcontra)
-- website: [floatbug.com](https://www.floatbug.com)
-- facebook: [avantcontra](https://facebook.com/avantcontra)
+- website: [avantcontra.com](https://www.avantcontra.com)
+- instagram: [avantcontra](https://instagram.com/avantcontra)
 - twitter: [avantcontra](https://twitter.com/avantcontra)
-- 微信公众号/知乎专栏：[实验编程](https://zhuanlan.zhihu.com/floatlab)
+- 公/知/小/抖/B：[实验编程](https://space.bilibili.com/309452713)
 
 
