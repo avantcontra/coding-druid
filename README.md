@@ -26,6 +26,11 @@ Trigonometric function (Sine) visualization.
     <img src="http://float.intplusplus.cn/sine-visualization-reactjs.gif" alt="sine-visualization-reactjs" width="200">
      Forked one, refactoring using React Hooks
 
+- [JavaScript/p5.js](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-p5js)
+
+    <img src="https://via.placeholder.com/200x200.png?text=Sine+p5.js" alt="sine-visualization-p5js" width="200">
+    Sine Function Visualization Using p5.js.
+
 - [Python](https://github.com/avantcontra/coding-druid/tree/master/01-Math-Trig-Function/sine-python)
 
     <img src="http://float.intplusplus.cn/sine-py-effect-0.gif" alt="sine-visualization-reactjs" width="200">
@@ -40,6 +45,11 @@ Fourier Series visualization.
 
     <img src="http://float.intplusplus.cn/fs-js-5.gif" alt="sine-visualization-reactjs" width="200">
     Fourier Series Visualization Using SVG and React Hooks.
+    
+- [JavaScript/p5.js](https://github.com/avantcontra/coding-druid/tree/master/02-Math-Fourier-Series/fourier-series-p5js)
+
+    <img src="https://via.placeholder.com/200x200.png?text=Fourier+p5.js" alt="fourier-series-visualization-p5js" width="200">
+    Fourier Series Visualization Using p5.js.
     
 - [Unity](https://github.com/avantcontra/coding-druid/tree/master/02-Math-Fourier-Series/fourier-series-unity)
 

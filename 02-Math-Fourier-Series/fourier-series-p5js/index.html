@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>傅里叶级数可视化 - p5.js版本</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>傅里叶级数可视化 - p5.js版本</h1>
+        <div id="controls">
+            <div>
+                <label for="terms">项数: </label>
+                <input type="range" id="terms" min="1" max="20" step="1" value="5">
+                <span id="termsValue">5</span>
+            </div>
+            <div>
+                <label for="speed">速度: </label>
+                <input type="range" id="speed" min="0.1" max="2" step="0.1" value="1">
+                <span id="speedValue">1.0</span>
+            </div>
+            <div>
+                <label for="waveType">波形: </label>
+                <select id="waveType">
+                    <option value="square">方波</option>
+                    <option value="sawtooth">锯齿波</option>
+                    <option value="triangle">三角波</option>
+                </select>
+            </div>
+        </div>
+        <div id="canvas-container"></div>
+    </div>
+    <script src="src/sketch.js"></script>
+</body>
+</html> 
